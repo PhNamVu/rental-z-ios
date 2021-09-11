@@ -13,6 +13,16 @@
 		F601506226E7AAE400D060F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F601506126E7AAE400D060F0 /* Preview Assets.xcassets */; };
 		F601506D26E7AAE500D060F0 /* RentalApartmentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601506C26E7AAE500D060F0 /* RentalApartmentsTests.swift */; };
 		F601507826E7AAE500D060F0 /* RentalApartmentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601507726E7AAE500D060F0 /* RentalApartmentsUITests.swift */; };
+		F601508926E7AC0E00D060F0 /* TextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601508826E7AC0E00D060F0 /* TextFieldFormView.swift */; };
+		F601508B26E7B16D00D060F0 /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601508A26E7B16D00D060F0 /* DateFormView.swift */; };
+		F601508D26E7B29000D060F0 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601508C26E7B29000D060F0 /* ButtonFormView.swift */; };
+		F601509126E7B46A00D060F0 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601509026E7B46A00D060F0 /* FormItem.swift */; };
+		F601509426E7C94400D060F0 /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601509326E7C94400D060F0 /* FormContentBuilder.swift */; };
+		F65AC6A426E87CB5009D387C /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65AC6A326E87CB5009D387C /* RegexPatterns.swift */; };
+		F65AC6A726E87DC2009D387C /* RegexFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65AC6A626E87DC2009D387C /* RegexFormItem.swift */; };
+		F65AC6AA26E87DFD009D387C /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65AC6A926E87DFD009D387C /* ValidationError.swift */; };
+		F65AC6AD26E87EE9009D387C /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65AC6AC26E87EE9009D387C /* ValidationManager.swift */; };
+		F6E74EB526E8DACB00597A84 /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E74EB426E8DACB00597A84 /* FormState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,16 @@
 		F601507326E7AAE500D060F0 /* RentalApartmentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentalApartmentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F601507726E7AAE500D060F0 /* RentalApartmentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalApartmentsUITests.swift; sourceTree = "<group>"; };
 		F601507926E7AAE500D060F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F601508826E7AC0E00D060F0 /* TextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormView.swift; sourceTree = "<group>"; };
+		F601508A26E7B16D00D060F0 /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
+		F601508C26E7B29000D060F0 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		F601509026E7B46A00D060F0 /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
+		F601509326E7C94400D060F0 /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
+		F65AC6A326E87CB5009D387C /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
+		F65AC6A626E87DC2009D387C /* RegexFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexFormItem.swift; sourceTree = "<group>"; };
+		F65AC6A926E87DFD009D387C /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		F65AC6AC26E87EE9009D387C /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		F6E74EB426E8DACB00597A84 /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +115,7 @@
 		F601505926E7AAE300D060F0 /* RentalApartments */ = {
 			isa = PBXGroup;
 			children = (
+				F601508E26E7B39E00D060F0 /* Form */,
 				F601505A26E7AAE300D060F0 /* RentalApartmentsApp.swift */,
 				F601505C26E7AAE300D060F0 /* ContentView.swift */,
 				F601505E26E7AAE400D060F0 /* Assets.xcassets */,
@@ -128,6 +149,95 @@
 				F601507926E7AAE500D060F0 /* Info.plist */,
 			);
 			path = RentalApartmentsUITests;
+			sourceTree = "<group>";
+		};
+		F601508526E7ABB900D060F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F601508826E7AC0E00D060F0 /* TextFieldFormView.swift */,
+				F601508A26E7B16D00D060F0 /* DateFormView.swift */,
+				F601508C26E7B29000D060F0 /* ButtonFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F601508E26E7B39E00D060F0 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				F6E74EB326E8DAB900597A84 /* Event */,
+				F65AC6A126E87C89009D387C /* Regex */,
+				F601509226E7C76800D060F0 /* Builder */,
+				F601508F26E7B3AC00D060F0 /* Model */,
+				F601508526E7ABB900D060F0 /* Views */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		F601508F26E7B3AC00D060F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F601509026E7B46A00D060F0 /* FormItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F601509226E7C76800D060F0 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				F601509326E7C94400D060F0 /* FormContentBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		F65AC6A126E87C89009D387C /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				F65AC6AB26E87ED1009D387C /* Manager */,
+				F65AC6A826E87DE8009D387C /* Error */,
+				F65AC6A526E87DB0009D387C /* Model */,
+				F65AC6A226E87C97009D387C /* Patterns */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		F65AC6A226E87C97009D387C /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				F65AC6A326E87CB5009D387C /* RegexPatterns.swift */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		F65AC6A526E87DB0009D387C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F65AC6A626E87DC2009D387C /* RegexFormItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F65AC6A826E87DE8009D387C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F65AC6A926E87DFD009D387C /* ValidationError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F65AC6AB26E87ED1009D387C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F65AC6AC26E87EE9009D387C /* ValidationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F6E74EB326E8DAB900597A84 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				F6E74EB426E8DACB00597A84 /* FormState.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +369,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65AC6AD26E87EE9009D387C /* ValidationManager.swift in Sources */,
 				F601505D26E7AAE300D060F0 /* ContentView.swift in Sources */,
+				F65AC6AA26E87DFD009D387C /* ValidationError.swift in Sources */,
+				F601508D26E7B29000D060F0 /* ButtonFormView.swift in Sources */,
+				F65AC6A426E87CB5009D387C /* RegexPatterns.swift in Sources */,
+				F601508926E7AC0E00D060F0 /* TextFieldFormView.swift in Sources */,
+				F601508B26E7B16D00D060F0 /* DateFormView.swift in Sources */,
+				F6E74EB526E8DACB00597A84 /* FormState.swift in Sources */,
+				F601509426E7C94400D060F0 /* FormContentBuilder.swift in Sources */,
+				F65AC6A726E87DC2009D387C /* RegexFormItem.swift in Sources */,
+				F601509126E7B46A00D060F0 /* FormItem.swift in Sources */,
 				F601505B26E7AAE300D060F0 /* RentalApartmentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
